@@ -1,0 +1,50 @@
+<sdf version='1.4'>
+  <world name='default'>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <name>yolo_nav_stage</name>
+      <uri>model://yolo_nav_stage</uri>
+      <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>hatchback</name>
+      <uri>model://hatchback</uri>
+      <static>true</static>
+      <pose>6 5 0.1 0 0 -1.4</pose>
+    </include>
+    <include>
+      <name>person_standing</name>
+      <uri>model://person_standing</uri>
+      <static>true</static>
+      <pose>6.5 -5 0.08 0 0 -0.8</pose>
+    </include>
+    <include>
+      <name>hatchback2</name>
+      <uri>model://hatchback</uri>
+      <static>true</static>
+      <pose>-1 7 0.1 0 0 -1.6</pose>
+    </include>
+    <include>
+      <name>hatchback_blue</name>
+      <uri>model://hatchback_blue</uri>
+      <static>true</static>
+      <pose>-7 -5 0.1 0 0 0.3</pose>
+    </include>
+  </world>
+</sdf>
