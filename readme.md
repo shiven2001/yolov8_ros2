@@ -1,4 +1,4 @@
-ROS2 workspace for Yolobot
+ROS2 workspace for Yolobot (which integrates YOLOv8 with ROS2)
 
 Build and Tested on ROS2 Foxy.
 Using Python 3.8.10
